@@ -6,13 +6,14 @@
   <title>Penjamin Kualitas Perangkat Lunak</title>
   <style>
     :root {
-      --bg-gradient: linear-gradient(135deg, #e0f7fa, #ffffff);
+      --bg-gradient: linear-gradient(135deg, #d0f7f0, #f7ffff);
       --card: #ffffff;
-      --primary: #0ea5a8;
+      --primary: #00a8b5;
+      --secondary: #007d8a;
       --text: #1e293b;
-      --muted: #64748b;
+      --muted: #475569;
       --border: #e2e8f0;
-      --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     }
 
     body {
@@ -54,7 +55,7 @@
     }
 
     h1 {
-      font-size: 26px;
+      font-size: 28px;
       color: var(--primary);
       margin: 0 0 10px 0;
       font-weight: 700;
@@ -86,7 +87,7 @@
     }
 
     h2, h3 {
-      color: var(--primary);
+      color: var(--secondary);
       margin-bottom: 10px;
     }
 
@@ -98,7 +99,7 @@
     }
 
     .page-item {
-      background: #f1fffe;
+      background: #e6fcf9;
       border-radius: 14px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       padding: 14px;
@@ -107,7 +108,7 @@
 
     .page-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .page-item img {
@@ -135,6 +136,10 @@
       background: var(--primary);
       color: #fff;
       text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background: #f9fafa;
     }
 
     .footer-note {
@@ -165,7 +170,7 @@
           <tr><td>NIM</td><td>223303030635</td></tr>
           <tr><td>Jurusan</td><td>Teknik Informatika</td></tr>
           <tr><td>Semester</td><td>7 (Tujuh)</td></tr>
-          <tr><td>Mata Kuliah</td><td>Penjamin Kualitas Perangkat Lunak</td></tr>
+          <tr><td>Mata Kuliah</td><td>Penjamin Rekayasa Perangkat Lunak</td></tr>
           <tr><td>Dosen</td><td>Achmad Ridwan, S.T., M.Si.</td></tr>
           <tr><td>Website</td><td><a href="https://medan88rentcar.com/" target="_blank">https://medan88rentcar.com/</a></td></tr>
         </table>
@@ -220,52 +225,52 @@
         <tbody>
           <tr>
             <td>Perencanaan</td>
-            <td>- Identifikasi kebutuhan sistem (tujuan: membuat website rental mobil online)<br>- Menentukan fitur utama: daftar mobil, detail, pemesanan, pembayaran, testimoni<br>- Menentukan platform (WordPress, PHP, Laravel, atau Flutter Web)</td>
-            <td>- Dokumen Analisis Kebutuhan (SRS)<br>- Rencana Proyek<br>- Sketsa awal UI/UX</td>
+            <td>Mengidentifikasi kebutuhan sistem untuk membuat website rental mobil online.<br>Menentukan fitur utama seperti daftar mobil, detail, pemesanan, konfirmasi, pembayaran, dan testimoni.<br>Menentukan platform (WordPress, PHP, Laravel, atau Flutter Web).</td>
+            <td>Dokumen Analisis Kebutuhan (SRS)<br>Rencana Proyek<br>Sketsa Awal UI/UX</td>
           </tr>
           <tr>
             <td>Analisis Sistem</td>
-            <td>- Analisis proses bisnis rental manual ke digital<br>- Menentukan alur proses (pencarian, booking, pembayaran, pengembalian)<br>- Menentukan entitas database (mobil, pelanggan, transaksi)</td>
-            <td>- Data Flow Diagram (DFD)<br>- Entity Relationship Diagram (ERD)<br>- Spesifikasi Database</td>
+            <td>Analisis proses bisnis rental manual yang diubah menjadi digital.<br>Membuat alur proses (pencarian, booking, pembayaran, pengembalian).<br>Menentukan entitas database (mobil, pelanggan, transaksi).</td>
+            <td>Data Flow Diagram (DFD)<br>Entity Relationship Diagram (ERD)<br>Spesifikasi Database</td>
           </tr>
           <tr>
             <td>Desain Sistem</td>
-            <td>- Mendesain tampilan UI (beranda, daftar mobil, form booking)<br>- Mendesain arsitektur backend (struktur folder, API endpoint, tabel database)<br>- Mendesain navigasi dan alur UX</td>
-            <td>- Wireframe / Mockup<br>- Desain UI (Figma / Canva / Adobe XD)<br>- Database Schema (MySQL)</td>
+            <td>Mendesain halaman beranda, daftar mobil, detail, form booking, dan kontak.<br>Membuat desain backend (struktur folder, API endpoint, tabel database).<br>Mendesain navigasi dan alur UI.</td>
+            <td>Wireframe / Mockup<br>Desain UI (Figma / Canva / Adobe XD)<br>Database Schema (MySQL)</td>
           </tr>
           <tr>
             <td>Pengembangan</td>
-            <td>- Membuat database MySQL<br>- Membuat halaman web (HTML, CSS, JS, PHP/Laravel)<br>- Menambahkan form booking & integrasi WhatsApp API<br>- Implementasi admin panel untuk kelola data mobil & pemesanan</td>
-            <td>- Kode sumber (Source Code)<br>- Struktur Database<br>- File konfigurasi server</td>
+            <td>Membuat database MySQL untuk data mobil, pelanggan, dan transaksi.<br>Mengembangkan halaman web (HTML, CSS, JS, PHP/Laravel).<br>Menambahkan form booking dan integrasi WhatsApp API.<br>Membuat admin panel untuk kelola data mobil & pemesanan.</td>
+            <td>Kode Sumber (Source Code)<br>Struktur Database<br>File Konfigurasi Server</td>
           </tr>
           <tr>
-            <td>Pengujian</td>
-            <td>- Uji fungsional: form booking, tampilan detail mobil, pesan ke admin<br>- Uji keamanan (SQL injection, validasi input)<br>- Uji kompatibilitas di berbagai perangkat</td>
-            <td>- Laporan Hasil Uji (Test Report)<br>- Daftar Bug & Perbaikan</td>
+            <td>Testing</td>
+            <td>Melakukan uji fungsional pada form booking, detail mobil, dan pesan ke admin.<br>Uji keamanan terhadap SQL injection & validasi input.<br>Uji kompatibilitas di berbagai perangkat.</td>
+            <td>Laporan Hasil Uji (Test Report)<br>Daftar Bug & Perbaikan</td>
           </tr>
           <tr>
             <td>Implementasi / Deployment</td>
-            <td>- Upload file website ke hosting<br>- Menghubungkan domain resmi<br>- Integrasi email admin & WhatsApp bisnis</td>
-            <td>- Hosting & Domain aktif<br>- Konfigurasi server (cPanel / FTP)<br>- Deployment Guide</td>
+            <td>Upload file ke hosting.<br>Menghubungkan domain resmi (misalnya: medan88rentcar.com).<br>Menyiapkan email admin dan integrasi WhatsApp bisnis.</td>
+            <td>Hosting & Domain Aktif<br>Konfigurasi Server (cPanel/FTP)<br>Deployment Guide</td>
           </tr>
           <tr>
             <td>Operasional</td>
-            <td>- Website aktif digunakan publik<br>- Admin menerima pemesanan online<br>- Sistem menyimpan transaksi nyata</td>
-            <td>- Data transaksi pelanggan<br>- Laporan order & keuangan</td>
+            <td>Website aktif digunakan publik.<br>Admin menerima pemesanan dari pelanggan.<br>Sistem menyimpan transaksi nyata.</td>
+            <td>Data Transaksi Pelanggan<br>Laporan Order & Keuangan</td>
           </tr>
           <tr>
-            <td>Pemeliharaan</td>
-            <td>- Mengecek kinerja server & database<br>- Memperbaiki bug pasca-live<br>- Update fitur baru (login, e-wallet, otomatisasi pembayaran)</td>
-            <td>- Log Maintenance<br>- Versi baru sistem (Changelog)<br>- Backup Database</td>
+            <td>Pemeliharaan (Maintenance)</td>
+            <td>Mengecek kinerja server & database.<br>Memperbaiki bug setelah live.<br>Menambah fitur baru seperti login, e-wallet, dan pembayaran otomatis.</td>
+            <td>Log Maintenance<br>Versi Baru Sistem (Changelog)<br>Backup Database</td>
           </tr>
           <tr>
             <td>Evaluasi & Pengembangan Lanjutan</td>
-            <td>- Analisis statistik pengguna & review pelanggan<br>- Laporan kinerja untuk pengembangan fitur lanjutan (contoh: aplikasi mobile)</td>
-            <td>- Laporan Evaluasi<br>- Rencana Pengembangan Lanjutan</td>
+            <td>Menganalisis statistik pengguna & review pelanggan.<br>Menyusun laporan kinerja untuk pengembangan fitur lanjutan seperti aplikasi mobile.</td>
+            <td>Laporan Evaluasi<br>Rencana Pengembangan Lanjutan</td>
           </tr>
         </tbody>
       </table>
-      <p class="footer-note">Dokumen ini disusun dalam format HTML agar mudah dibaca, dipresentasikan, dan diarsipkan secara digital.</p>
+      <p class="footer-note">@ Laskar Eltriman Gulo  (223303030635) | Universitas Prima Indonesia</p>
     </section>
   </div>
 </body>
