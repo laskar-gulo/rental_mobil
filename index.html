@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Penjamin Kualitas Perangkat Lunak</title>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #e0f7fa, #ffffff);
+      --card: #ffffff;
+      --primary: #0ea5a8;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header.card {
+      background: var(--card);
+      padding: 24px 30px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    header.card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 16px;
+      border: 2px solid var(--border);
+      object-fit: cover;
+      background-color: #f8f9fa;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: var(--primary);
+      margin: 0 0 10px 0;
+      font-weight: 700;
+    }
+
+    .biodata {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .biodata td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .biodata td:first-child {
+      font-weight: 600;
+      width: 180px;
+      color: var(--muted);
+    }
+
+    section.card {
+      background: var(--card);
+      margin-top: 20px;
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    h2, h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .page-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .page-item {
+      background: #f1fffe;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .page-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .page-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--primary);
+      color: #fff;
+      text-align: left;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Biodata -->
+    <header class="card">
+      <img src="images/logo.png" alt="Logo Website">
+      <div class="header-text">
+        <h1>Penjamin Kuliatas Perangkat Lunak</h1>
+        <table class="biodata">
+          <tr><td>Nama</td><td>Laskar Eltriman Gulo</td></tr>
+          <tr><td>NIM</td><td>223303030635</td></tr>
+          <tr><td>Jurusan</td><td>Teknik Informatika</td></tr>
+          <tr><td>Semester</td><td>7 (Tujuh)</td></tr>
+          <tr><td>Mata Kuliah</td><td>Penjamin Kualitas Perangkat Lunak</td></tr>
+          <tr><td>Dosen</td><td>Achmad Ridwan, S.T., M.Si.</td></tr>
+          <tr><td>Website</td><td><a href="https://medan88rentcar.com/" target="_blank">https://medan88rentcar.com/</a></td></tr>
+        </table>
+      </div>
+    </header>
+
+    <!-- Bagian Website -->
+    <section class="card">
+      <h2>A. Sistem / Website Rental Mobil (<a href="https://medan88rentcar.com/">medan88rentcar.com</a>)</h2>
+
+      <h3>1. Tampilan Sistem / Website</h3>
+      <div class="page-list">
+        <div class="page-item">
+          <img src="images/home.png" alt="Home Page">
+          <strong>Home</strong><br>
+          Beranda utama: menampilkan daftar mobil, promo, dan tombol booking.
+        </div>
+        <div class="page-item">
+          <img src="images/profil.png" alt="Profil Page">
+          <strong>Profil</strong><br>
+          Informasi perusahaan, sejarah, alamat, dan jam operasional.
+        </div>
+        <div class="page-item">
+          <img src="images/layanan.png" alt="Layanan Page">
+          <strong>Layanan</strong><br>
+          Jenis layanan: sewa harian, mingguan, dengan / tanpa supir.
+        </div>
+        <div class="page-item">
+          <img src="images/blog.png" alt="Blog Page">
+          <strong>Blog</strong><br>
+          Artikel seputar tips berkendara, promo, dan panduan pemesanan.
+        </div>
+        <div class="page-item">
+          <img src="images/kontak.png" alt="Kontak Page">
+          <strong>Kontak</strong><br>
+          Formulir kontak, nomor WhatsApp, dan lokasi via Google Maps.
+        </div>
+      </div>
+    </section>
+
+    <!-- Siklus Pengembangan -->
+    <section class="card">
+      <h3>2. Siklus Pengembangan Website Rental Mobil</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Siklus</th>
+            <th>Aktivitas</th>
+            <th>Dokumen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Perencanaan</td>
+            <td>- Identifikasi kebutuhan sistem (tujuan: membuat website rental mobil online)<br>- Menentukan fitur utama: daftar mobil, detail, pemesanan, pembayaran, testimoni<br>- Menentukan platform (WordPress, PHP, Laravel, atau Flutter Web)</td>
+            <td>- Dokumen Analisis Kebutuhan (SRS)<br>- Rencana Proyek<br>- Sketsa awal UI/UX</td>
+          </tr>
+          <tr>
+            <td>Analisis Sistem</td>
+            <td>- Analisis proses bisnis rental manual ke digital<br>- Menentukan alur proses (pencarian, booking, pembayaran, pengembalian)<br>- Menentukan entitas database (mobil, pelanggan, transaksi)</td>
+            <td>- Data Flow Diagram (DFD)<br>- Entity Relationship Diagram (ERD)<br>- Spesifikasi Database</td>
+          </tr>
+          <tr>
+            <td>Desain Sistem</td>
+            <td>- Mendesain tampilan UI (beranda, daftar mobil, form booking)<br>- Mendesain arsitektur backend (struktur folder, API endpoint, tabel database)<br>- Mendesain navigasi dan alur UX</td>
+            <td>- Wireframe / Mockup<br>- Desain UI (Figma / Canva / Adobe XD)<br>- Database Schema (MySQL)</td>
+          </tr>
+          <tr>
+            <td>Pengembangan</td>
+            <td>- Membuat database MySQL<br>- Membuat halaman web (HTML, CSS, JS, PHP/Laravel)<br>- Menambahkan form booking & integrasi WhatsApp API<br>- Implementasi admin panel untuk kelola data mobil & pemesanan</td>
+            <td>- Kode sumber (Source Code)<br>- Struktur Database<br>- File konfigurasi server</td>
+          </tr>
+          <tr>
+            <td>Pengujian</td>
+            <td>- Uji fungsional: form booking, tampilan detail mobil, pesan ke admin<br>- Uji keamanan (SQL injection, validasi input)<br>- Uji kompatibilitas di berbagai perangkat</td>
+            <td>- Laporan Hasil Uji (Test Report)<br>- Daftar Bug & Perbaikan</td>
+          </tr>
+          <tr>
+            <td>Implementasi / Deployment</td>
+            <td>- Upload file website ke hosting<br>- Menghubungkan domain resmi<br>- Integrasi email admin & WhatsApp bisnis</td>
+            <td>- Hosting & Domain aktif<br>- Konfigurasi server (cPanel / FTP)<br>- Deployment Guide</td>
+          </tr>
+          <tr>
+            <td>Operasional</td>
+            <td>- Website aktif digunakan publik<br>- Admin menerima pemesanan online<br>- Sistem menyimpan transaksi nyata</td>
+            <td>- Data transaksi pelanggan<br>- Laporan order & keuangan</td>
+          </tr>
+          <tr>
+            <td>Pemeliharaan</td>
+            <td>- Mengecek kinerja server & database<br>- Memperbaiki bug pasca-live<br>- Update fitur baru (login, e-wallet, otomatisasi pembayaran)</td>
+            <td>- Log Maintenance<br>- Versi baru sistem (Changelog)<br>- Backup Database</td>
+          </tr>
+          <tr>
+            <td>Evaluasi & Pengembangan Lanjutan</td>
+            <td>- Analisis statistik pengguna & review pelanggan<br>- Laporan kinerja untuk pengembangan fitur lanjutan (contoh: aplikasi mobile)</td>
+            <td>- Laporan Evaluasi<br>- Rencana Pengembangan Lanjutan</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="footer-note">Dokumen ini disusun dalam format HTML agar mudah dibaca, dipresentasikan, dan diarsipkan secara digital.</p>
+    </section>
+  </div>
+</body>
+</html>
